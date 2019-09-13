@@ -2,7 +2,7 @@
 
 {
   "displayName": "Facebook Pixel",
-  "description": "[UNOFFICIAL] Custom Template for inserting Facebook Pixel.",
+  "description": "[UNOFFICIAL] Custom Template for inserting Facebook Pixel by https://github.com/thesteffi.",
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
