@@ -1,0 +1,38 @@
+<script type="text/javascript">
+/*
+*
+* Script by github.com/thesteffi
+*
+*/
+(function(){
+    //init variables
+    var cookieName = {{fb_cookie_name}};
+    
+    //set up triggers
+    if(document.readyState == "complete" || document.readyState == "interactive"){
+      attachFbListenersToTriggers();
+    }else{
+      document.addEventListener("DOMContentLoaded",function(event){
+        attachFbListenersToTriggers();
+      });
+    }
+    
+    // attach event listeners to opt out triggers
+    function attachFbListenersToTriggers(){
+      var optoutTriggers = document.querySelectorAll('.facebook-opt-out-link');
+      for(var i = 0; i < optoutTriggers.length; i++){ 
+        if(optoutTriggers[i].addEventListener){
+          optoutTriggers[i].addEventListener('click', performFacebookOptOut, false);
+        }else{
+          optoutTriggers[i].attachEvent('onclick', performFacebookOptOut);
+        }
+      }
+    }
+    
+    //setCookie
+    function performFacebookOptOut(){
+      document.cookie = cookieName+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+      alert("The Facebook Pixel tracking has been disabled.");
+    }
+  })();
+</script>
