@@ -5,7 +5,7 @@ To use the templates, just import them into your Google Tag Manager Container.
 To do so, navigate to the template-section and click on "New".
 After that you will find a Menu (three dots) on the right hand side. Simply open that menu and choose "import" and done!
 
-## [Facebook Pixel](facebook_pixel.tpl)
+## [Facebook Pixel](template.tpl)
 A Simple Template to include a Facebook Pixel to a website. You can give the User an option to opt-out from Pixel-Tracking by using a cookie. The template is inspired by the great tutorials of Simo Ahava (check out <a href="https://simoahava.com">his blog simoahava.com</a> for great learning resources!).
 You can either create a script yourself (as a custom html tag) or use the upcoming Facebook Opt-Out Template.
 
